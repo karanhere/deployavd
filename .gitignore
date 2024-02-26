@@ -11,6 +11,8 @@
 # to change depending on the environment.
 *.tfvars
 *.tfvars.json
+*locals.tf
+*backend.tf
 
 
 #exclude tfplan since it is binary file 

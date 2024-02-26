@@ -12,7 +12,7 @@
 *.tfvars
 *.tfvars.json
 *locals.tf
-*backend.tf
+*backend*
 
 
 #exclude tfplan since it is binary file 

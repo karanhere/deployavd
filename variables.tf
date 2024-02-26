@@ -20,7 +20,21 @@ variable "client_secret" {
   sensitive   = true
 }
 
+variable "backend_rg" {
+  type = string
+}
 
+variable "backend_storage" {
+  type = string
+}
+
+variable "backend_container_name" {
+  type = string
+}
+
+variable "backend_key" {
+  type = string
+}
 
 variable "rg_location" {
   default     = "centralus"

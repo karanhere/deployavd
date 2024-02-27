@@ -5,6 +5,7 @@ terraform {
       version = "3.66.0"
     }
 }
+backend "azurerm" {}
 }
 provider "azurerm" {
   # Configuration options

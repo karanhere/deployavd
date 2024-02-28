@@ -14,6 +14,7 @@
 *locals.tf
 *backend*
 *backend.tf
+*lock.hcl 
 
 
 #exclude tfplan since it is binary file 

@@ -5,15 +5,11 @@ data "azuread_user" "aad_user" {
   user_principal_name = format("%s", each.key)
 }
 
-data "azuread_user" "aad_user" {
-  user_principal_name = "kchaudhary@worksoft.com"
+data "azuread_users" "name" {
+  count = 5
+  user_principal_names = ["train${count.index}@${locals.domain}"]
 }
 
-resource "azuread_group_member" "aad_group_member" {
-  for_each         = data.azuread_user.aad_user
-  group_object_id  = azuread_group.aad_group.id
-  member_object_id = each.value["id"]
-}
 */
 data "azurerm_role_definition" "role" { # access an existing built-in role
   name = "Desktop Virtualization User"
@@ -46,3 +42,4 @@ value= azurerm_role_assignment.role.principal_type
 
 
 
+*/

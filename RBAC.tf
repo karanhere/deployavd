@@ -39,7 +39,3 @@ resource "azurerm_role_assignment" "role" {
 output "principaltype" {
 value= azurerm_role_assignment.role.principal_type  
 }
-
-
-
-*/

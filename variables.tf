@@ -3,21 +3,25 @@
 variable "subscription_id" {
   type = string
   sensitive   = true
+  default = null
 }
 
 variable "tenant_id" {
   type = string
   sensitive   = true
+  default = null
 }
 
 variable "client_id" {
   type = string
   sensitive   = true
+  default = null
 }
 
 variable "client_secret" {
   type = string
   sensitive   = true
+  default = null
 }
 
 

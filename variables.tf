@@ -24,8 +24,13 @@ variable "client_secret" {
   default = null
 }
 
+variable "workspace" {
+type        = string
+description = "name of terraform workspace and environment"
+}
 
 variable "rg_location" {
+  type        = string
   default     = "centralus"
   description = "Location of the resource group."
   }
